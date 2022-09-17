@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class AuthTest {
 
     @Test
-    public void testGoogleAuth(){
+    public void testGoogleAuth() {
 
     }
 }
