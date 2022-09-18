@@ -38,4 +38,27 @@ public class TestOpsTests {
         step("Нажать кнопку  Войти ");
         step("Разлогиниться");
     }
+
+    @Test
+    @AllureId("12220")
+    @DisplayName("Авторизация через Apple_HW")
+    @Tag("web")
+    @Owner("allure8")
+    @Feature("Авторизация_HW")
+    public void PersonalAccountApple() {
+        step("Открываем главную страницу");
+        step("Нажимаем кнопку Авторизация");
+        step("Выбираем способ авторизации через Apple аккаунт");
+        step("Авторизуемся как пользователь KotenKiton", () -> {
+            step("Вводим логин Koten");
+            step("Вводим пароль Kiton123");
+            step("Нажимаем кнопку Войти");
+        });
+        step("Должны оказаться на главной странице сайта");
+        step("Профиль пользователя должен быть заполнен из Apple аккаунта.", () -> {
+            step("Имя - KotenKiton");
+            step("Логин - Koten");
+        });
+        step("Разлогиниться");
+    }
 }
