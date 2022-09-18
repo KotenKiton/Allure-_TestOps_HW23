@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 public class TestOpsTests {
 
     @Test
-    @AllureId("12211")
+    @AllureId("12211") // Помнить про плагины и авторизацию.
     @DisplayName("Авторизация_HW")
     @Tags({@Tag("blocker"), @Tag("web")})
     @Owner("allure8")
