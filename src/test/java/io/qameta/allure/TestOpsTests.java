@@ -24,4 +24,18 @@ public class TestOpsTests {
         step("Нажать кнопку Войти");
         step("Разлогиниться");
     }
+
+    @Test
+    @AllureId("12219")
+    @DisplayName("Авторизация_HW_Через_Yandex")
+    @Tags({@Tag("major"), @Tag("web")})
+    @Owner("allure8")
+    @Feature("Авторизация_HW")
+    public void PersonalAccountYandex () {
+        step("Открыть главную страницу ");
+        step("Нажать на кнопку Войти через Яндекс аккаунт");
+        step("Ввести данные яндекс почты random@yandex.ru");
+        step("Нажать кнопку  Войти ");
+        step("Разлогиниться");
+    }
 }
