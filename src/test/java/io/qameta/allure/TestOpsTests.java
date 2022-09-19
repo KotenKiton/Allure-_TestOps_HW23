@@ -40,7 +40,7 @@ public class TestOpsTests {
     }
 
     @Test
-    @AllureId("12220") // Помнить про плагины и авторизацию.
+    @AllureId("12220") // //Помнить про плагины и авторизацию.
     @DisplayName("Авторизация через Apple_HW")
     @Tag("web")
     @Owner("allure8")
